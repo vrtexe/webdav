@@ -62,6 +62,13 @@ func ParseConfig(filename string, flags *pflag.FlagSet) (*Config, error) {
 		v.SetConfigFile(filename)
 	}
 
+	for _, permissionKey := range PermissionKeys() {
+		err := v.BindEnv(permissionKey)
+		if err != nil {
+			return nil, err
+		}
+	}
+
 	// Environment settings
 	v.SetEnvPrefix("wd")
 	v.SetEnvKeyReplacer(strings.NewReplacer(".", "_"))

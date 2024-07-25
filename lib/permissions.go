@@ -45,6 +45,10 @@ type Permissions struct {
 	Rules  []*Rule
 }
 
+func PermissionKeys() []string {
+	return []string{"scope", "modify", "rules"}
+}
+
 // Allowed checks if the user has permission to access a directory/file
 func (p Permissions) Allowed(r *http.Request) bool {
 	// Determine whether or not it is a read or write request.
