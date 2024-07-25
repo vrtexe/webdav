@@ -20,10 +20,7 @@ Docker images are provided on both [GitHub's registry](https://github.com/hacdia
 
 ```bash
 # GitHub Registry
-docker pull ghcr.io/hacdias/webdav:latest
-
-# Docker Hub
-docker pull hacdias/webdav:latest
+docker pull ghcr.io/vrtexe/webdav:latest
 ```
 
 ## Usage
@@ -46,7 +43,7 @@ docker run \
   -p 6060:6060 \
   -v $(pwd)/config.yml:/config.yml:ro \
   -v $(pwd)/data:/data \
-  ghcr.io/hacdias/webdav -c /config.yml
+  ghcr.io/vrtexe/webdav -c /config.yml
 ```
 
 ## Configuration

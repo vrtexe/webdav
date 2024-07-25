@@ -10,8 +10,8 @@ import (
 	"strings"
 	"syscall"
 
-	"github.com/hacdias/webdav/v4/lib"
 	"github.com/spf13/cobra"
+	"github.com/vrtexe/webdav/v4/lib"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 )

@@ -1,4 +1,4 @@
-module github.com/hacdias/webdav/v4
+module github.com/vrtexe/webdav/v4
 
 go 1.22
 
